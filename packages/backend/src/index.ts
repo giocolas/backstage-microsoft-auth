@@ -20,7 +20,9 @@ backend.add(import('@backstage/plugin-auth-backend'));
 // See https://backstage.io/docs/backend-system/building-backends/migrating#the-auth-plugin
 // backend.add(import('@backstage/plugin-auth-backend-module-guest-provider'));
 // See https://github.com/backstage/backstage/blob/master/docs/auth/guest/provider.md
-backend.add(import('@backstage/plugin-auth-backend-module-microsoft-provider'));
+
+// backend.add(import('@backstage/plugin-auth-backend-module-microsoft-provider'));
+backend.add(import('@internal/backstage-plugin-auth-backend-module-custom-signin-resolver'));
 
 // catalog plugin
 backend.add(import('@backstage/plugin-catalog-backend/alpha'));
